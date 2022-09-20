@@ -1,0 +1,43 @@
+{
+  "posts": [
+      {
+          "DS_CAMPO": "Pressão Arterial (mmHg)",
+          "NRO_ORDENACAO": "1.0",
+          "SEXO": "A",
+          "IN_OBRIGATORIO": "S",
+          "CHAVE1": 5,
+          "CHAVE2": 6,
+          "TIPO": "number",
+          "LIMITE": "5.0",
+          "TIPO2": null,
+          "LIMITE2": null,
+          "OPCOES": []
+      },
+      {
+          "DS_CAMPO": "Pulso (bmp)",
+          "NRO_ORDENACAO": "2.0",
+          "SEXO": "A",
+          "IN_OBRIGATORIO": "N",
+          "CHAVE1": 7,
+          "CHAVE2": null,
+          "TIPO": "number",
+          "LIMITE": "5.0",
+          "TIPO2": null,
+          "LIMITE2": null,
+          "OPCOES": []
+      },
+      {
+          "DS_CAMPO": "Frequência Respiratória (mmp)",
+          "NRO_ORDENACAO": "3.0",
+          "SEXO": "A",
+          "IN_OBRIGATORIO": "N",
+          "CHAVE1": 8,
+          "CHAVE2": null,
+          "TIPO": "number",
+          "LIMITE": "5.0",
+          "TIPO2": null,
+          "LIMITE2": null,
+          "OPCOES": []
+      }
+  ]
+}

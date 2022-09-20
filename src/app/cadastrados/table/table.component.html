@@ -1,0 +1,37 @@
+<table>
+    <tr >
+        <th>#id</th>
+        <th>DS_CAMPO</th>
+        <th>NRO_ORDENACAO</th>
+        <th>SEXO</th>
+        <th>IN_OBRIGATORIO</th>
+        <th>CHAVE1</th>
+        <th>CHAVE2</th>
+        <th>TIPO</th>
+        <th>LIMITE</th>
+        <th>TIPO2</th>
+        <th>LIMITE2</th>
+        <th>OPCOES</th>
+        <th>Ações</th>
+        <th>Ações</th>
+
+    </tr>
+
+
+    <tr *ngFor="let contato of cadastro">
+        <th>{{contato.id}}</th>
+        <th>{{contato.DS_CAMPO}}</th>
+        <th>{{contato.NRO_ORDENACAO}}</th>
+        <th>{{contato.SEXO}}</th>
+        <th>{{contato.IN_OBRIGATORIO}}</th>
+        <th>{{contato.CHAVE1}}</th>
+        <th>{{contato.CHAVE2}}</th>
+        <th>{{contato.TIPO}}</th>
+        <th>{{contato.LIMITE}}</th>
+        <th>{{contato.TIPO2}}</th>
+        <th>{{contato.LIMITE2}}</th>
+        <th>{{contato.OPCOES}}</th>
+        <th><button (click)="remover(contato.id)">Remover</button></th>
+        <th><button (click)="atualizar(contato)" [routerLink]="['/cadastro']" [queryParams]="{contatoId: contato.id}">Atualizar</button></th>
+    </tr>
+</table>

@@ -15,21 +15,21 @@ export class CadastrosService {
 }
   cadastrarContato(contato: CadastroModel): Observable<any>{
   return this.http
-  .post("http://localhost:3000/cadastrados/", contato)
+  .post("http://localhost:3000/posts", contato)
  }
 
   listarCadastro(): Observable<any>{
     return this.http
-    .get("http://localhost:3000/cadastrados");
+    .get("http://localhost:3000/posts");
   }
   atualizarCadastro(id:any, contato: CadastroModel): Observable<any>{
     return this.http
-    .put("http://localhost:3000/cadastrados/".concat(id), contato);
+    .put("http://localhost:3000/posts".concat(id), contato);
   }
 
   removerCadastro(id: any): Observable<any>{
     return this.http
-    .delete("http://localhost:3000/cadastrados/".concat(id));
+    .delete("http://localhost:3000/posts".concat(id));
   }
 }
 

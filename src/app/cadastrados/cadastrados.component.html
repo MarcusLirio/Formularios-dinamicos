@@ -1,66 +1,43 @@
 <body>
-<ng-container >
-    <mat-toolbar class="example-header">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Eletriza</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" [routerLink]="['/login']">Login</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/cadastro']">Cadastro</a>
-                    </li>
-                </ul>
+    <ng-container >
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Eletriza</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" [routerLink]="['/login']">Login</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/cadastro']">Cadastro</a>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
-            </div>
-            </nav>
-    </mat-toolbar>
-<div class="container">
-    <mat-sidenav-container >
-      <mat-sidenav #sidenav mode="side" opened class="sidenav">
-
-        <button class="butao" mat-button [matMenuTriggerFor]="cadastros">Cadastros</button>
-            <mat-menu #cadastros="matMenu">
-                <button mat-menu-item >Contatos</button>
-                <button mat-menu-item >Testes</button>
-            </mat-menu>
-      </mat-sidenav>
-      <mat-sidenav-content >
-        <p><mat-icon (click)="sidenav.toggle()">keyboard_arrow_left</mat-icon></p>
-        
-        <h2>Contatos Eletriza</h2>
-<hr>
-<table>
-    <tr >
-        <th>#id</th>
-        <th>Nome</th>
-        <th>E-mail</th>
-        <th>Número</th>
-        <th>Nome da Empresa</th>
-        <th>Ações</th>
-    </tr>
-
-
-    <tr *ngFor="let contato of cadastro">
-        <th>{{contato.id}}</th>
-        <th>{{contato.nome}}</th>
-        <th>{{contato.email}}</th>
-        <th>{{contato.numero}}</th>
-        <th>{{contato.nomedaempresa}}</th>
-        <th><button (click)="remover(contato.id)">Remover</button></th>
-        <th><button (click)="atualizar(contato)" [routerLink]="['/cadastro']" [queryParams]="{contatoId: contato.id}">Atualizar</button></th>
-    </tr>
-</table>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
-</div> 
-    <mat-toolbar class="example-footer">
-        <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot;  <a href="#">Back to top</a></p></mat-toolbar>
-  </ng-container>
-</body>
-  
+                </nav>
+    <div class="container">
+        <mat-sidenav-container >
+          <mat-sidenav #sidenav mode="side" opened class="sidenav">
+    
+            <button class="butao" mat-button [matMenuTriggerFor]="cadastros">Cadastros</button>
+                <mat-menu #cadastros="matMenu">
+                    <button mat-menu-item >Contatos</button>
+                    <button mat-menu-item >Testes</button>
+                </mat-menu>
+          </mat-sidenav>
+          <mat-sidenav-content >
+            <p><mat-icon (click)="sidenav.toggle()">keyboard_arrow_left</mat-icon></p>
+            
+            <h2>Contatos Eletriza</h2>
+    <hr>
+        <tabelas></tabelas>
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+    </div> 
+            <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot;  <a href="#">Back to top</a></p>
+      </ng-container>
+    </body>
+      

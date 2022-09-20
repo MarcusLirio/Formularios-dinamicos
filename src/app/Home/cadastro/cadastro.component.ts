@@ -60,10 +60,17 @@ export class CadastroComponent implements OnInit {
     this.http.get<CadastroModel>(`http://localhost:4000/cadastrados/${id}`)
     .subscribe((data) => {
       this.contato.id = data.id;
-      this.contato.email = data.email;
-      this.contato.nome = data.nome;
-      this.contato.nomedaempresa = data.nomedaempresa;
-      this.contato.numero = data.numero;
+      this.contato.DS_CAMPO = data.DS_CAMPO;
+      this.contato.NRO_ORDENACAO = data.NRO_ORDENACAO;
+      this.contato.SEXO = data.SEXO;
+      this.contato.IN_OBRIGATORIO = data.IN_OBRIGATORIO;
+      this.contato.CHAVE1 = data.CHAVE1;
+      this.contato.CHAVE2 = data.CHAVE2;
+      this.contato.TIPO = data.TIPO;
+      this.contato.LIMITE = data.LIMITE;
+      this.contato.TIPO2 = data.TIPO2;
+      this.contato.LIMITE2 = data.LIMITE2;
+      this.contato.OPCOES = data.OPCOES;
     }, err => {
         console.log('Erro ao obter o Contato por Id', err);
     })

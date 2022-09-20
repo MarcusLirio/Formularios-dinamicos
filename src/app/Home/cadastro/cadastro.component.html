@@ -19,31 +19,64 @@
         </div>
         </nav>
     </header>  
-    <main class="form-signin w-100 m-auto">
-        <form class="formulario" >
-        <img class="mb-4 imagem" src="https://instagram.fcgh15-1.fna.fbcdn.net/v/t51.2885-15/300969071_580984800172208_9182929200142584013_n.jpg?stp=dst-jpg_e15_s480x480&_nc_ht=instagram.fcgh15-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=OWjWw7UKe14AX_UnXb_&edm=ABJHkxYAAAAA&ccb=7-5&ig_cache_key=MjkxMzAyNzI1MTM3NDE1MTYxOQ%3D%3D.2-ccb7-5&oh=00_AT-Fkl9jcPZPd1BNaa699RqN23NbdKYdyDbI0J4jSNDcJQ&oe=630E1FFB&_nc_sid=fa978c" alt="" width="80" height="80" >
-        <h1 class="h3 mb-3 fw-normal">Cadastro para Contato</h1>
-    
-        <div class="form-floating">
-            <input type="text" name="nome"  [(ngModel)]="contato.nome" class="form-control"  id="floatingInput"placeholder="Nome Completo">
-            <label for="floatingInput">Nome</label>
-        </div>
-        <div class="form-floating">
-            <input type="email" name="email" [(ngModel)]="contato.email" class="form-control" placeholder="name@example.com">
-            <label for="floatingInput" >E-mail</label>
-        </div>
-        <div class="form-floating">
-            <input type="number" name="numero" [(ngModel)]="contato.numero" class="form-control"  placeholder="Número de Celular">
-            <label for="floatingInput">Número</label>
-        </div>
-        <div class="form-floating">
-            <input type="text" name="nomedaempresa" [(ngModel)]="contato.nomedaempresa" class="form-control"  placeholder="Número da Empresa">
-            <label for="floatingInput">Nome da Empresa</label>
-        </div>
-        
-        <button class="w-100 btn btn-lg btn-primary" *ngIf="this.contatoId === 0" (click)="Cadastrar()">Cadastrar</button>
-        <button class="w-100 btn btn-lg btn-primary" *ngIf="this.contatoId > 0" (click)="Atualizar()">Atualizar</button>
 
+
+
+    <main class="row form-signin w-100 m-auto">
+        <form class="formulario col-md-4" >
+        <img class="mb-4 imagem" src="https://instagram.fcgh15-1.fna.fbcdn.net/v/t51.2885-15/300969071_580984800172208_9182929200142584013_n.jpg?stp=dst-jpg_e15_s480x480&_nc_ht=instagram.fcgh15-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=OWjWw7UKe14AX_UnXb_&edm=ABJHkxYAAAAA&ccb=7-5&ig_cache_key=MjkxMzAyNzI1MTM3NDE1MTYxOQ%3D%3D.2-ccb7-5&oh=00_AT-Fkl9jcPZPd1BNaa699RqN23NbdKYdyDbI0J4jSNDcJQ&oe=630E1FFB&_nc_sid=fa978c" alt="" width="80" height="80" >
+        <h1 class="h3 mb-3 fw-normal">Cadastro Vander</h1>
         </form>
     </main>
+
+    <div class="container">
+        <div class="row">
+                    <div class="col-sm-3 form-floating">
+                        <input type="text" name="DS_CAMPO"  [(ngModel)]="contato.DS_CAMPO" class="form-control"  id="floatingInput"placeholder="DS_CAMPO">
+                        <label for="floatingInput">DS_CAMPO</label>
+                    </div>
+                    <div class="col-sm-3 form-floating">
+                        <input type="text" name="NRO_ORDENACAO"  [(ngModel)]="contato.NRO_ORDENACAO" class="form-control"  id="floatingInput"placeholder="NRO_ORDENACAO">
+                        <label for="floatingInput">NRO_ORDENACAO</label>
+                    </div>
+                    <div class="col-sm-3 form-floating">
+                        <input type="text" name="SEXO"  [(ngModel)]="contato.SEXO" class="form-control"  id="floatingInput"placeholder="SEXO">
+                        <label for="floatingInput">SEXO</label>
+                    </div>
+                    <div class="col-sm-3 form-floating">
+                        <input type="text" name="IN_OBRIGATORIO"  [(ngModel)]="contato.IN_OBRIGATORIO" class="form-control"  id="floatingInput"placeholder="IN_OBRIGATORIO">
+                        <label for="floatingInput">IN_OBRIGATORIO</label>
+                    </div>
+                    <div class="col-sm-3 form-floating">
+                        <input type="text" name="CHAVE1"  [(ngModel)]="contato.CHAVE1" class="form-control"  id="floatingInput"placeholder="CHAVE1">
+                        <label for="floatingInput">CHAVE1</label>
+                    </div>
+                    <div class="col-sm-3 form-floating">
+                        <input type="text" name="CHAVE2"  [(ngModel)]="contato.CHAVE2" class="form-control"  id="floatingInput"placeholder="CHAVE2">
+                        <label for="floatingInput">CHAVE2</label>
+                    </div>
+                    <div class="col-sm-3 form-floating">
+                        <input type="email" name="TIPO" [(ngModel)]="contato.TIPO" class="form-control" placeholder="TIPO">
+                        <label for="floatingInput" >TIPO</label>
+                    </div>
+                    <div class="col-sm-3 form-floating">
+                        <input type="number" name="LIMITE" [(ngModel)]="contato.LIMITE" class="form-control"  placeholder="LIMITE">
+                        <label for="floatingInput">LIMITE</label>
+                    </div>
+                    <div class="col-sm-3 form-floating">
+                        <input type="number" name="TIPO2" [(ngModel)]="contato.TIPO2" class="form-control"  placeholder="TIPO2">
+                        <label for="floatingInput">TIPO2</label>
+                    </div>
+                    <div class="col-sm-3 form-floating">
+                        <input type="number" name="LIMITE2" [(ngModel)]="contato.LIMITE2" class="form-control"  placeholder="LIMITE2">
+                        <label for="floatingInput">LIMITE2</label>
+                    </div>
+                    <div class="col-sm-3 form-floating">
+                        <input type="text" name="OPCOES" [(ngModel)]="contato.OPCOES" class="form-control"  placeholder="OPCOES">
+                        <label for="floatingInput">OPCOES</label>
+                    </div>
+                </div>
+                    <button class="w-100 btn btn-lg btn-primary" *ngIf="this.contatoId === 0" (click)="Cadastrar()">Cadastrar</button>
+                    <button class="w-100 btn btn-lg btn-primary" *ngIf="this.contatoId > 0" (click)="Atualizar()">Atualizar</button>
+                </div>
 </body>

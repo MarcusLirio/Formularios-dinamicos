@@ -10,12 +10,14 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConteudoComponent } from './conteudo/conteudo.component';
+import { TesteComponent } from './teste/teste.component';
 @NgModule({
   declarations: [
     MenuComponent,
     FooterComponent,
     ConteudoComponent,
-    HomeComponent
+    HomeComponent,
+    TesteComponent
   ],
   imports: [
     FormsModule,

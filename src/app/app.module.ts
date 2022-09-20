@@ -18,12 +18,14 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+import { TableComponent } from './cadastrados/table/table.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CadastroComponent,
     CadastradosComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
